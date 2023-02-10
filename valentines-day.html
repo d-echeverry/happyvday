@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #ffb6c1; /* light pink color */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .rose {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url('./rose.png');
+        background-size: cover;
+        animation: rosefall 5s ease-in-out infinite;
+      }
+      
+      .button {
+        background-color: #fff;
+        padding: 20px 60px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://youtu.be/Wgp9AK8WYYs" target="_blank" class="button">Britoya: Click Here</a>
+    <div class="rose" id="rose1"></div>
+    <div class="rose" id="rose2"></div>
+    <div class="rose" id="rose3"></div>
+    <div class="rose" id="rose4"></div>
+    <div class="rose" id="rose5"></div>
+    <div class="rose" id="rose6"></div>
+    <div class="rose" id="rose7"></div>
+    <div class="rose" id="rose8"></div>
+    <div class="rose" id="rose9"></div>
+    <div class="rose" id="rose10"></div>
+    <div class="rose" id="rose11"></div>
+    <div class="rose" id="rose12"></div>
+    <div class="rose" id="rose13"></div>
+    <div class="rose" id="rose14"></div>
+    <div class="rose" id="rose15"></div>
+    <div class="rose" id="rose16"></div>
+    <div class="rose" id="rose17"></div>
+    <div class="rose" id="rose18"></div>
+    <div class="rose" id="rose19"></div>
+    <div class="rose" id="rose20"></div>
+    <div class="rose" id="rose21"></div>
+    <div class="rose" id="rose22"></div>
+    <div class="rose" id="rose23"></div>
+    <div class="rose" id="rose24"></div>
+    <div class="rose" id="rose25"></div>
+    <div class="rose" id="rose26"></div>
+    <div class="rose" id="rose27"></div>
+    <div class="rose" id="rose28"></div>
+    <div class="rose" id="rose29"></div>
+    <div class="rose" id="rose30"></div>
+    <script>
+      const roses = document.querySelectorAll('.rose');
+
+      function randomPosition() {
+        for (let i = 0; i < roses.length; i++) {
+          const x = Math.floor(Math.random() * window.innerWidth);
+          const y = Math.floor(Math.random() * window.innerHeight);
+          roses[i].style.left = x + 'px';
+          roses[i].style.top = y + 'px';
+          roses[i].style.display = 'block';
+        }
+      }
+
+      setInterval(randomPosition, 1000);
+    </script>
+  </body>
+</html>
